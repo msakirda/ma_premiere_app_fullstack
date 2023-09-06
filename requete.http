@@ -1,1 +1,5 @@
 GET http://localhost:3030/hello/myriam
+
+###
+
+GET http://localhost:3030/button/:myriam

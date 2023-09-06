@@ -15,6 +15,13 @@ app.get('/hello/:nom', (req, res) => {
   res.send(message);
 });
 
+app.get('/button/:name', (req, res) => {
+  const nom = req.params.name;
+  const message =nom;
+  res.send(message);
+});
+
+
 ViteExpress.listen(app, parseInt(port), () =>
   console.log("Server is listening on port 3000...")
 );
